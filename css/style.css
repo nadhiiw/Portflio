@@ -1,0 +1,278 @@
+* {
+        box-sizing: border-box;
+    }
+    /* the colors the been used through the website */
+    :root {
+        --primary:teal;
+        --secondary:tomato;
+        --tertiary: blueviolet;
+        --dark: rgba(28, 29, 33, 1);
+        --light: rgba(238, 238, 247, 1);
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px 15px 0px;
+        background-color: gray;
+        color: var(--light);
+        box-shadow: 0 5px 35px teal;
+    }
+    
+    header a {
+        color: var(--light);
+        font-weight: 500;
+        padding: 30px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    header h1 {
+        color: var(--light);
+        background-color: teal;
+        padding: 5px 3px 3px 7px;
+        margin: 0;
+        font-size: 40px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    h nav a {
+        list-style: none;
+        text-decoration: none;
+        color:var(--light);
+        padding: 5px 12px;
+        font-size: 20px;
+    }
+    
+    nav a:hover {
+        background-size: 100% 100%;
+        color: var(--secondary)
+    }
+    
+    nav a:last-child {
+        background-size: 100% 100%;
+        border-bottom-width: 10px var(--secondary);
+    }
+    
+    .subtitle {
+        position: relative;
+        padding: 7%;
+        background-color:var(--primary);
+        background-image: url("../img/Portfolio_img.png");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+    }
+    
+    .subtitle h2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    main {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .page {
+        font-size: 20px;
+        margin: 25px 0;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    
+    .page h2 {
+        clear: both;
+        text-align: right;
+        width: 25%;
+        padding: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border-right: solid var(--secondary);
+        text
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        float: right;
+        width: 70%;
+        overflow: auto;
+        margin-top: 10px;
+        margin-right: 60px;
+    }
+    
+    .card-body p {
+        margin-left: 10px;
+    }
+    
+    .img-me {
+        margin-right: 5px;
+        float: left;
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* portfilo imga or the backgroung img */
+    .surf-report {
+        background-image: url("../img/Screen\ Shot\ 2021-02-21\ at\ 10.14.48\ AM.png");
+        width: 100%;
+        padding: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color:var(--primary);
+    }
+    .led-wall{
+        background-image: url("../img/Generative.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+    .calculator{
+        background-image: url("../img/Js.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .pastel-puzzels{
+        background-image: url("../img/hands.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .run-buddy{
+        background-image: url("../img/designer.gif");
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .items {
+        color: var(--dark);
+        width: 49%;
+        padding: 80px 80px 80px 0px;
+        margin: 2px 2px 2px 0;
+        border: solid 6px var(--primary);
+        margin-top: 10px;
+        margin-right: 5px;
+        background-color:var(--secondary);
+        flex-direction: row;
+    }
+    .items div {
+        float: left;
+        padding: 5px;
+        background-color: var(--primary);
+    }
+    .items:hover{
+        background-color: var(--secondary);
+    }
+    
+    footer {
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    
+    footer a {
+        display: inline-block;
+        padding: 10px;
+        margin-left: 20px;
+        color: var(--primary);
+    }
+    
+    .infro {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        float: right;
+        width: 70%;
+    }
+    
+    .infro a:hover {
+        color: var(--secondary);
+    }
+    /* the portfolio at 1024px*/
+    @media screen and (max-width: 1024px) {
+    header {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: auto;
+        flex-direction: column;
+        background-color: var(--tertiary);
+    }
+    header h1{
+        text-align: center;
+        width: 100%;
+        background-color:var(--primary);
+    }
+
+    nav a {
+        width: 100%;
+        flex-direction: column;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        flex-wrap: wrap;
+        color: var(--light)lk;
+    }
+    .page{
+        margin: 0;
+        padding: 0;
+    }
+    .page h2 {
+        margin: 5px 0 0 0;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        background-color:var(--tertiary);
+        border-right: none;
+    }
+    .container{
+        width: 100%;
+        margin: 10px;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    .items{
+        width: 100%;
+        flex-direction: column;
+    }
+    .infro{
+        width: 100%;
+        flex-direction: column;
+    }
+}
