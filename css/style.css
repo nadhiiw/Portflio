@@ -139,28 +139,44 @@
         height: 200px;
     }
     
-    /* portfilo imga or the backgroung img */
-    .surf-report {
+    /* National Park */
+    .national-park {
         background-image: url("../img/National\ Park\ .png");
         background-position: center;
         background-size: cover;
         width: 100%;
         padding: 400px;
-        /* margin-top: 10px;
-        margin-bottom: 10px; */
+        margin-top: 10px;
+        margin-bottom: 10px;
         background-color:var(--primary);
     }
-    .led-wall{
+
+    /* Wedding planner */
+    .wedding-planner {
+        background-image: url("../img/wedding-planner.png");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding: 400px;
+        background-color:var(--primary);
+    }
+
+    /* Weather Forcast*/
+    .weather-cast{
         background-image: url("../img/Wether\ Forcast.png");
         background-position: center;
         background-size: cover;
     }
-    .calculator{
+
+    /* Work  Schedule*/
+    .work-day{
         background-image: url("../img/Work\ Schedule.png");
         background-position: center;
         background-size: cover;
     }
-    .pastel-puzzels{
+
+    /* Password */
+    .password{
         background-image: url("../img/Password.png");
         background-position: center;
         background-size: cover;
